@@ -18,9 +18,8 @@ app.use(express.static(path.join(__dirname, "assets")));
 app.use(express.static(path.join(__dirname, "images")));
 app.use(flash());
 
-const STORE = new SessionStore({
-    uri:
-        "mongodb+srv://kmrscript:kmrscript@cluster0-eb4ve.mongodb.net/online-shop?retryWrites=true&w=majority",
+const STORE = new SessionStore({  
+    uri: "mongodb+srv://sarakhaled:cluster011@cluster0.pfj3rzl.mongodb.net/?retryWrites=true&w=majority",
     collection: "sessions"
 });
 
